@@ -157,6 +157,7 @@ spec:
                               - name
                               type: object
                             type: array
+                            x-kubernetes-list-type: atomic
                           propagation:
                             description: Propagation defines which pod should mount
                               the volume
@@ -166,6 +167,7 @@ spec:
                                 receives an Extra Volume that can potentially be mounted
                               type: string
                             type: array
+                            x-kubernetes-list-type: atomic
                           volumes:
                             items:
                               description: Volume our slimmed down version of Volume
@@ -1149,6 +1151,7 @@ spec:
                               - name
                               type: object
                             type: array
+                            x-kubernetes-list-type: atomic
                         required:
                         - mounts
                         - volumes
